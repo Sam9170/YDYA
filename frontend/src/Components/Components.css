@@ -1,0 +1,611 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+#navbar{
+    background-color: rgba(0, 132, 255, 0.193);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    z-index: 999;
+}
+#logo{
+    /* background-color: red; */
+    width: 50%;
+    text-align: left;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+}
+#logo img{
+    width: 3rem;
+    transition: transform 0.3s ease;
+}
+#logo img:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+#threebar{
+    width: 40%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* padding-right: 4rem; */
+}
+#baricon:hover{
+    color: green;
+    cursor: pointer;
+    /* width: 2rem; */
+    font-size: 1.5rem;
+}
+#profile{
+    width: 10%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#profile img{
+    background-image: url('https://i.gifer.com/fxVE.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 2.5rem;
+    margin: auto;
+}
+#options{
+    background-color: rgba(83, 159, 192, 0.2);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    cursor: pointer;
+    font-size: 1rem;
+    top: 3.1rem;
+    right: 5%;
+}
+#menuOptions{
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.opt{
+    /* background-color: gray; */
+    width: 100%;
+    height: 2.3rem;
+    color: white;
+    font-weight: 500;
+    font-size: calc(10px + 1vmin);
+}
+.opt:hover{
+    color: green;
+}
+
+
+
+/* Homepage */
+
+#home_body{
+    /* background-image: url('https://i.gifer.com/9viJ.gif'); */
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_btn{
+    margin: 1rem;
+    width: 150px;
+    height: 40px;
+    border-radius: 2rem;
+}
+.home_btn {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.home_btn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.home_btn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+/* Login page */
+
+#body {
+    background-image:url("https://i.gifer.com/IrM.gif") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+
+#left, #right {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#left{
+    background-image:url("../Assets/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50%;   
+    opacity: 0.5; 
+}
+#right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#txt{
+    /* background-color: blue; */
+    width: 75%;
+    text-align: end;
+    /* font-size: 3em; */
+    font-size: calc(30px + 3vmin);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 2rem;
+    line-height: 1;
+}
+#txt1{
+    /* font-size: 1rem; */
+    font-size: calc(3.5px + 3vmin);
+    line-height: 0.5;
+    width: calc(5rem + 7.5vmin);
+    text-align: left;
+    opacity: 0.6;
+}
+#txt2{
+    color: rgb(0, 212, 212);
+    opacity: 0.3;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgb(0, 212, 212);
+}
+
+
+#loginbox{
+    background-color: rgba(83, 159, 192, 0.2);
+    backdrop-filter: blur(5px);
+    width: 80%;
+    height: 20rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.pswd_inp{
+    width: 100%;
+}
+
+.inptag{
+    width:50%;
+    background-color: transparent;
+    margin-top: 1em;
+    border: 0;
+    border-bottom: 2px solid rgb(11, 185, 93);
+    border-radius: 2rem;
+    font-size: 1rem;
+    /* margin: auto; */
+    text-align: center;
+    color: rgb(0, 194, 87);
+}
+.inptag:focus{
+    outline: none;
+}
+
+#submit_btn{
+    margin-top: 2rem;
+    text-align: center;
+    align-self: flex-end;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(0, 172, 0);
+}
+#submit_btn:hover{
+    color: blue;
+}
+
+#toggleButton {
+    position: absolute;
+    font-size: 0.7em;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+#extra_options{
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:  calc(0.3rem + 1vmin);
+    margin-top: 3rem;
+    cursor: pointer;
+}
+#extra_options a{
+    width: fit-content;
+    color: green;
+}
+#extra_options a:hover{
+    color: white;
+    font-size: calc(0.3rem + 1.2vmin);
+}
+#hr{
+    width: 10%;
+    border-color: cyan;
+    margin-top: 1rem;
+}
+#forgot_pswd_btn{
+    margin-top: 1rem;
+}
+
+
+
+/* Chatpage */
+
+#chatbody{
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    min-width: 500px;
+    height:100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#display{
+    /* background-color: red; */
+    background-image: url('../Assets/logo1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20rem;
+    width: 75%;
+    height: 80vh;
+    margin-bottom: 0.5rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#display::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* #save_btn{
+    background-color: transparent;
+    width: 70%;
+    height: 5%;
+    display: flex;
+    justify-content: end;
+}
+#save{
+    width: 5%;
+    height: 100%;
+} */
+
+
+#inp_box{
+    /* background-color: yellow; */
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#inp_field{
+    width: 80%;
+    height: 2.5rem;
+    font-size: calc(5px + 2vmin);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    text-align: left;
+    padding-left: 1rem;
+    background-color: rgb(32, 48, 60);
+    border: none;
+    border-right: 0.1rem solid gray;
+}
+#send_btn{
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 0.1rem solid gray; ;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    color: white;
+}
+#send_btn:hover{
+    cursor: pointer;
+    color: green;
+}
+#send_btn:focus{
+    color: red;
+}
+#inp_field:focus{
+    outline: 1px solid white;
+}
+
+
+
+/* Sentmsg page */
+
+#content{
+    margin-right: 0%;
+    margin-left: auto;
+    margin-top: 2%;
+    font-size: calc(5px + 1.5vmin) ;
+    background-color: rgb(46,77,99);
+    width: fit-content;
+    min-width: 50px;
+    max-width: 50%;
+    text-align: left;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    word-wrap: break-word;
+}
+
+
+/* Receivedmsg page  */
+
+#content1{
+    margin-left: 0%;
+    margin-right: auto;
+    margin-top: 2%;
+    font-size: calc(5px + 1.5vmin) ;
+    background-color: rgb(46,77,99);
+    width: fit-content;
+    min-width: 50px;
+    max-width: 50%;
+    text-align: left;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    word-wrap: break-word;
+}
+
+
+
+/* Loading animation */
+
+.center {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    background-image:url("https://i.gifer.com/4Mg1.gif") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 1; */
+}
+/* .wave {
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, cyan, #fff);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+}
+.wave:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+    animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+    animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+    animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+    animation-delay: 0.9s;
+} */
+
+@keyframes wave {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+
+
+/* ContactPage */
+
+#contactbody{
+    background-image: url('https://i.gifer.com/Ve9W.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 750px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#contactform{
+    /* background-color: blue; */
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+#mailid{
+    width: 50%;
+    height :2rem;
+    padding-left: 1rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1) inset;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    font-weight: 500;
+    text-align: center;
+    color: green;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+#mailid:focus{
+    outline: none;
+}
+#usermsg{
+    backdrop-filter: blur(20px);
+    width: 100%;
+    margin: auto;
+    border: none;
+    /* border: 0.1rem solid cyan !important; */
+    text-wrap: wrap;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    background-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1) inset;
+}
+#usermsg:focus{
+    outline: none;
+}
+#count{
+    font-size: 1rem;
+    text-align: end;
+    color: yellow !important;
+    font-weight: 500;
+}
+#msg_send_btn{
+    width: 10%;
+    height: 5%;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    /* border: 2px solid black !important; */
+    background-color: rgba(83, 70, 199, 0.507);
+    box-shadow: 0 0 20px rgb(8, 1, 86) inset;
+    backdrop-filter: blur(20px);
+    margin: auto;
+}
+#msg_send_btn:hover{
+    color: green;
+    background-color: black;
+}
