@@ -16,7 +16,7 @@
     z-index: 999;
 }
 #logo{
-    /* background-color: red; */
+    color: white;
     width: 50%;
     text-align: left;
     padding-left: 1rem;
@@ -40,6 +40,9 @@
     justify-content: end;
     align-items: center;
     /* padding-right: 4rem; */
+}
+#baricon{
+    color: white;
 }
 #baricon:hover{
     color: green;
@@ -268,6 +271,7 @@
 
 .inptag{
     width:50%;
+    background: none;
     background-color: transparent;
     margin-top: 1em;
     border: 0;
@@ -544,7 +548,7 @@
     text-align: center;
 }
 #contactform{
-    /* background-color: blue; */
+    color: white;
     width: 40%;
     margin: auto;
     display: flex;
@@ -572,6 +576,7 @@
     outline: none;
 }
 #usermsg{
+    color: white;
     backdrop-filter: blur(20px);
     width: 100%;
     margin: auto;

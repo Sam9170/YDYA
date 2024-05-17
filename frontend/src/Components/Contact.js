@@ -10,7 +10,7 @@ function ContactPage() {
         const inputMessage = event.target.value;
         const wordCount = inputMessage.trim().length;
         const remainingCount = wordlimit - wordCount;
-        
+
         if (remainingCount >= 0) {
             setCount(remainingCount);
             setMessage(inputMessage);
@@ -24,7 +24,7 @@ function ContactPage() {
     return (
         <div id='contactbody'>
             <div id='contactform'>
-                <h3>Contact US</h3>
+                <h3 id='contact_heading'>Contact US</h3>
                 <input id='mailid' type='mail' placeholder='Email :- xyz@gmail.com' autoComplete='off' autoFocus/>
                 <textarea id='usermsg' placeholder='Type here....' rows={20} cols={100} value={message} onChange={handleCount} />
                 <span id='count'>{count}</span>

@@ -15,7 +15,7 @@ function ChatPage() {
   useEffect(() => {
     if (newMessage.trim() !== '') {
       const data = {
-        querry: newMessage
+        query: newMessage
       };
       console.log(newMessage)
       setNewMessage('');
